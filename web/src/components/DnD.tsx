@@ -3,6 +3,8 @@
 import React from "react";
 import Draggable from "react-draggable";
 
+const Draggable1: any = Draggable;
+
 export const DnD = () => {
   const [isDragging, setIsDragging] = React.useState(false);
   const [className, setClassName] = React.useState(
@@ -12,9 +14,9 @@ export const DnD = () => {
   const [text, setText] = React.useState("Drag me");
   return (
     <>
-      <Draggable>
+      <Draggable1>
         <div className={className}>{text}</div>
-      </Draggable>
+      </Draggable1>
       <div>
         <div>
           <span className="mt-12">Class name</span>
