@@ -9,9 +9,9 @@ export const DnD = () => {
   const [isDragging, setIsDragging] = React.useState(false);
   const [className, setClassName] = React.useState(
     "bg-gradient-to-r from-purple-500 to-indigo-500 p-8 rounded-xl shadow-lg text-white"
-    // ""
   );
   const [text, setText] = React.useState("Drag me");
+
   return (
     <>
       <Draggable1>
